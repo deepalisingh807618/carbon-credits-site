@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Credits - GreenTrade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  background: url('image/solar.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 1px solid white;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #333;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      
+    }
+
+    p.description {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.708);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: left;
+      color: black;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card button {
+      padding: 0.6rem 1.2rem;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .project-card button:hover {
+      background-color: #e0e0e0;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GreenTrade</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="buy.html">Buy</a>
+      <a href="sell.html">Sell</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Buy Carbon Credits</h2>
+    <p class="description">Select from verified carbon credit projects below and support a greener planet 🌍</p>
+
+    <div class="projects">
+      <div class="project-card">
+        <h3>🌳 Forest Restoration - Madhya Pradesh</h3>
+        <p>Support native forest regrowth and biodiversity.</p>
+        <p><strong>Price:</strong> ₹300 / credit</p>
+        <button onclick="alert('✅ You bought 1 credit from Forest Restoration')">Buy Now</button>
+      </div>
+
+      <div class="project-card">
+        <h3>🌬️ Wind Energy Project - Tamil Nadu</h3>
+        <p>Power homes with clean, renewable wind energy.</p>
+        <p><strong>Price:</strong> ₹450 / credit</p>
+        <button onclick="alert('✅ You bought 1 credit from Wind Energy Project')">Buy Now</button>
+      </div>
+
+      <div class="project-card">
+        <h3>☀️ Solar Offset - Gujarat</h3>
+        <p>Offset emissions by investing in solar farms.</p>
+        <p><strong>Price:</strong> ₹350 / credit</p>
+        <button onclick="alert('✅ You bought 1 credit from Solar Offset')">Buy Now</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

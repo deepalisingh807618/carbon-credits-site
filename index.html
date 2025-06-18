@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenTrade - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('image/forest.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid white;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #333;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      background: white;
+      color: #56ab2f;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #e0e0e0;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .reasons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .reasons div {
+      width: 250px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .featured-projects .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 10px;
+    }
+
+    .testimonials blockquote {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin: 1rem auto;
+      max-width: 600px;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .reasons { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GreenTrade</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="buy.html">Buy</a>
+      <a href="sell.html">Sell</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empower a Greener Tomorrow 🌍</h1>
+    <p>Buy & Sell Verified Carbon Credits with Ease</p>
+    <a href="buy.html"><button>Explore Credits</button></a>
+  </section>
+
+  <section class="why-credits">
+    <h2>Why Carbon Credits?</h2>
+    <div class="reasons">
+      <div>
+        🌱 <strong>Eco-Friendly</strong>
+        <p>Offset your carbon footprint easily.</p>
+      </div>
+      <div>
+        ⚡ <strong>Verified Projects</strong>
+        <p>Support projects that make real impact.</p>
+      </div>
+      <div>
+        🌎 <strong>Global Action</strong>
+        <p>Be part of the climate solution.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <h2>Top Projects</h2>
+    <div class="card">
+      <h3>🌳 Forest Restoration - ₹300</h3>
+      <p>Native forest regrowth and biodiversity boost.</p>
+    </div>
+    <div class="card">
+      <h3>☀️ Solar Offset - ₹350</h3>
+      <p>Solar farms in rural India powering thousands.</p>
+    </div>
+    <a href="buy.html"><button>View All Projects</button></a>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Supporters Say</h2>
+    <blockquote>“This platform made it easy to support clean energy. Highly recommend!” — Aditi Verma</blockquote>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GreenTrade. All rights reserved.</p>
+    <p>Contact: greentrade@email.com</p>
+  </footer>
+
+</body>
+</html>
